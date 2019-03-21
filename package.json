@@ -1,0 +1,24 @@
+{
+  "name": "vaak",
+  "version": "1.0.0",
+  "description": "prodcut showcase website",
+  "main": "particles.js",
+  "homepage": "https://github.com/Arpan2798/Product_Showcase#readme",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "deploy": " gh-pages -d main",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arpan2798/Product_Showcase.git"
+  },
+  "author": "Arpan Satpathi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Arpan2798/Product_Showcase/issues"
+  }
+}
