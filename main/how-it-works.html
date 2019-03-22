@@ -12,19 +12,16 @@
 	<script src="page-scroll-effects-master/js/modernizr.js"></script> <!-- Modernizr -->
   	
 	<title>How It Works</title>
-	<style>
-		.div:hover {
-			opacity: 1;
-			z-index: 10;
-		}
-	</style>
+	
 </head>
 <!-- hijacking: on/off - animation: none/scaleDown/rotate/gallery/catch/opacity/fixed/parallax -->
 
 <body data-hijacking="off" data-animation="rotate">
 	<section class="cd-section visible">
 		<div class="div">
-			<img src="img/first.gif" style="max-width: 100%;margin: 100px">
+			<img src="img/first.gif" style="max-width: 100%;margin: 100px;-webkit-box-shadow: -16px 13px 25px 0px rgba(0,0,0,0.75);
+			-moz-box-shadow: -16px 13px 25px 0px rgba(0,0,0,0.75);
+			box-shadow: -16px 13px 25px 0px rgba(0,0,0,0.75);">
 			<p style="margin:50px">The first step is to aquire the flex sensor data and transmit it to arduino microcontroller.Whenever the flex sensor is bent its resistance value is changed.</p>
         </div>
 	</section>
@@ -32,14 +29,18 @@
 	<section class="cd-section">
 		<div class="div">
 			<p style="margin: 50px">Once the resistance values are acquired from the sensors, they are converted to thier respective alphabets. Those alphabets are then send to the google Firebase where furthur processing takes place.</p>
-			<img src="img/second.gif" class="gif" style="max-width: 80%; margin:100px">
+			<img src="img/second.gif" class="gif" style="max-width: 80%; margin:100px;-webkit-box-shadow: -20px 15px 22px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -20px 15px 22px 0px rgba(0,0,0,0.75);
+box-shadow: -20px 15px 22px 0px rgba(0,0,0,0.75);">
 		</div>
 	</section>
 
 	<section class="cd-section">
 		<div class="div">
-			<img src="img/third.gif" style="max-width: 100%; margin:100px">
-			<p style="margin: 50px">After this the alphabets are sent to an android app where text to speech conversion takes place so that common people can know what the user is trying to say</p>
+			<img src="img/third.gif" style="max-width: 100%; margin:100px; -webkit-box-shadow: -20px 20px 21px 1px rgba(0,0,0,1);
+			-moz-box-shadow: -20px 20px 21px 1px rgba(0,0,0,1);
+			box-shadow: -20px 20px 21px 1px rgba(0,0,0,1);">
+			<p style="margin: 50px">After this the alphabets are sent to an android app where text to speech conversion takes place so that common people can know what the user is trying to say.</p>
 		</div>
 	</section>
 

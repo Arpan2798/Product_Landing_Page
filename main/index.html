@@ -249,14 +249,17 @@
 
                 .price-div:hover #p1 {
                     opacity: 1;
-                    transition: all 0.5s ease-out;
+                    transition: all 0.5s ease-in-out;
                     transform: translateY(-10px);
+                    text-shadow: -7px 6px 10px #000102;
+                    padding-top:40px;
                 }
 
                 .price-div:hover #p2 {
                     opacity: 1;
-                    transition: all 0.5s ease-out;
+                    transition: all 0.5s ease-in-out;
                     transform: translateY(10px);
+                    text-shadow: -7px 6px 10px #000102;
                 }
 
                 #main-con {
@@ -307,7 +310,11 @@
                   height: 180%;
                 }
 
-
+                .navbar {
+                  -webkit-box-shadow: -4px 10px 29px 3px rgba(0,0,0,0.75);
+-moz-box-shadow: -4px 10px 29px 3px rgba(0,0,0,0.75);
+box-shadow: -4px 10px 29px 3px rgba(0,0,0,0.75);
+                }
         </style>
     </head>
     <body>
@@ -378,7 +385,9 @@
       <section class="sec2" id="price">
           <div class="container h100" style="margin-top:1rem">
             <div class="price-div"><h1 id="p1">PRICING</h1>
-                <img src="img/glove-1.jpg">
+                <img src="img/glove-1.jpg" style="-webkit-box-shadow: -20px 20px 21px 1px rgba(0,0,0,1);
+                -moz-box-shadow: -20px 20px 21px 1px rgba(0,0,0,1);
+                box-shadow: -20px 20px 21px 1px rgba(0,0,0,1);">
                 <h1 id="p2">&#x20b9;5000/&dollar;72.5</h1>
             </div>
           </div>
