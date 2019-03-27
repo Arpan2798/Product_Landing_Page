@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Handlee|Julius+Sans+One|Orbitron" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
         <link rel="stylesheet" href="swiper-master/swiper.min.css">
         <style>
           #particles-js {
@@ -33,7 +33,14 @@
                 }
 
                 #desc {
-                  background: #91b9ca;
+                  background: rgba(145,185,202,1);
+                  background: -moz-linear-gradient(top, rgba(145,185,202,1) 0%, rgba(145,185,202,1) 77%, rgba(18,79,120,1) 100%);
+                  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(145,185,202,1)), color-stop(77%, rgba(145,185,202,1)), color-stop(100%, rgba(18,79,120,1)));
+                  background: -webkit-linear-gradient(top, rgba(145,185,202,1) 0%, rgba(145,185,202,1) 77%, rgba(18,79,120,1) 100%);
+                  background: -o-linear-gradient(top, rgba(145,185,202,1) 0%, rgba(145,185,202,1) 77%, rgba(18,79,120,1) 100%);
+                  background: -ms-linear-gradient(top, rgba(145,185,202,1) 0%, rgba(145,185,202,1) 77%, rgba(18,79,120,1) 100%);
+                  background: linear-gradient(to bottom, rgba(145,185,202,1) 0%, rgba(145,185,202,1) 77%, rgba(18,79,120,1) 100%);
+                  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#91b9ca', endColorstr='#124f78', GradientType=0 );
                   height:100vh;
                   margin:0;
                   height: 100vh;
@@ -267,15 +274,11 @@
                   height: 100vh;
                   scroll-behavior: smooth;
                   overflow-y: scroll;
-                  overflow: hidden;
-                }
-
-                body {
-                  overflow: hidden;
+                  
                 }
 
                 .btn {
-                  border: 5px solid #3498db;
+                  border: 3px solid #c7f305;
                   background: none;
                   padding: 10px 20px;
                   font-size: 20px;
@@ -286,6 +289,9 @@
                   position: relative;
                   overflow: hidden;
                   z-index: 1;
+                  -webkit-box-shadow: -8px 17px 20px 5px rgba(0,0,0,0.75);
+                  -moz-box-shadow: -8px 17px 20px 5px rgba(0,0,0,0.75);
+                  box-shadow: -8px 17px 20px 5px rgba(0,0,0,0.75);
                   
                 }
 
@@ -296,7 +302,7 @@
                   left: 0;
                   width: 100%;
                   height: 0%;
-                  background: #0662ad;
+                  background: #f5f5f5;
                   z-index: -1;
                   transition: 0.8s;
                   
@@ -312,8 +318,8 @@
 
                 .navbar {
                   -webkit-box-shadow: -4px 10px 29px 3px rgba(0,0,0,0.75);
--moz-box-shadow: -4px 10px 29px 3px rgba(0,0,0,0.75);
-box-shadow: -4px 10px 29px 3px rgba(0,0,0,0.75);
+                  -moz-box-shadow: -4px 10px 29px 3px rgba(0,0,0,0.75);
+                  box-shadow: -4px 10px 29px 3px rgba(0,0,0,0.75);
                 }
         </style>
     </head>
@@ -371,12 +377,12 @@ box-shadow: -4px 10px 29px 3px rgba(0,0,0,0.75);
             <div class="row">
                 <div class="offset-sm-2 col-sm-8">
                     <div class="headerText">
-                        <h1 style="text-align: center;font-family: 'Handlee', cursive; padding: 25px;margin-top:50px">Let's see how it works!</h1>
-                        <div style="display: grid; grid-template-columns: auto auto;grid-column-gap: 100px">
+                      <h1 style="text-align: center;font-family: 'Handlee', cursive; padding: 25px;margin-top:90px">Let's see how it works!</h1>
+                        <div style="display: grid; grid-template-columns: auto auto;grid-column-gap: 100px;position: relative;">
                             <img src="img/machine.gif" style="max-width: 100%">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat neque quos non animi harum qui commodi voluptatum, reiciendis consectetur ipsam maxime assumenda quas possimus reprehenderit ad. Dolor quidem voluptatum rerum, consequatur delectus recusandae vero corrupti dolore reprehenderit amet repellendus voluptatibus!</p>
+                            <p style="width: 100%;text-align: center;line-height: 30px;">The mute/dumb people talk in sign language talk in sign language. Not many people know sign language. Thus there is communication gap between these two groups of people. Our device interprets the finger motion of mute people and analyze it and finally converts it to an alphabet which an automated voice speaks so that common people can listen and understand what they are trying to speak.</p>
                         </div>
-                        <button class="btn btn1"><a href="how-it-works.html" style="text-decoration: none;color: black">KNOW MORE</a></button>
+                        <button class="btn btn1"><a href="how-it-works.html" style="text-decoration: none;color: black;margin: 0">KNOW MORE</a></button>
                     </div>
                 </div>
             </div>
@@ -395,17 +401,15 @@ box-shadow: -4px 10px 29px 3px rgba(0,0,0,0.75);
       <section class="sec3" id="Feedback">
           <div class="container1">
               <div class="box">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.</p>
+                <p>Everyone is unique among themselves.Each person is born with special abilities. I think what you kids are doing
+                  for the specially abled kids is truely commendable. I wish you a good luck and hope you guys can develop this product. 
+                </p>
                 <h4>Someone Famous<br><span>Creative Director</span></h4>
               </div>
               <div class="box">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.</p>
+                <p>There is no doubt a communication gap between the mute and the normal. The fact that you people identified this problem and
+                  thought of solving the issue deserves an applause. I am sure if the product is made properly, will help a lot of people in communication.
+                </p>
                 <h4>Someone Famous<br><span>Creative Director</span></h4>
               </div>
             </div> 
@@ -428,7 +432,7 @@ box-shadow: -4px 10px 29px 3px rgba(0,0,0,0.75);
                           <img src="img/img-2.jpg">
                         </div>
                         <div class="details">
-                          <h3>Daruri Rakesh Acharya<br><span>Product Developer</span></h3>
+                          <h3>Daruri Rakesh Acharya<br><span>Hardware Developer</span></h3>
                         </div>
                       </div>
                       <div class="swiper-slide">
@@ -436,7 +440,7 @@ box-shadow: -4px 10px 29px 3px rgba(0,0,0,0.75);
                           <img src="img/img-3.jpg">
                         </div>
                         <div class="details">
-                          <h3>Aditya Kshettri<br><span>Product Developer</span></h3>
+                          <h3>Aditya Kshettri<br><span>Hardware Developer</span></h3>
                         </div>
                       </div>
                       <div class="swiper-slide">
@@ -444,7 +448,7 @@ box-shadow: -4px 10px 29px 3px rgba(0,0,0,0.75);
                           <img src="img/img-4.jpg">
                         </div>
                         <div class="details">
-                          <h3>Soham Sengupta<br><span>Product Developer</span></h3>
+                          <h3>Soham Sengupta<br><span>Software Developer</span></h3>
                         </div>
                       </div>
                       <div class="swiper-slide">
@@ -452,7 +456,7 @@ box-shadow: -4px 10px 29px 3px rgba(0,0,0,0.75);
                           <img src="img/img-5.jpg">
                         </div>
                         <div class="details">
-                          <h3>Naman Arora<br><span>Product Developer</span></h3>
+                          <h3>Naman Arora<br><span>Software Developer</span></h3>
                         </div>
                       </div>
                       <div class="swiper-slide">
@@ -489,8 +493,14 @@ box-shadow: -4px 10px 29px 3px rgba(0,0,0,0.75);
             },
           });
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 2000,
+      });
+    </script>
     <script type="text/javascript" src="particles.js"></script>
-    <script type="text/javascript" src="swiper-master/app.js"></script>
+    <script type="text/javascript" src="app.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

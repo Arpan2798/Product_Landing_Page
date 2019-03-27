@@ -7,11 +7,13 @@ Primary style
   box-sizing: border-box;
 }
 
-
+html {
+  font-size: 62.5%;
+}
 
 body {
-  font-size: 10rem;
-  font-family: 'Cabin Sketch', cursive;
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
   color: #ffffff;
   background-color: #22283f;
   -webkit-font-smoothing: antialiased;
@@ -48,16 +50,10 @@ Main Components
 .cd-section {
   height: 100vh;
 }
-.cd-section div {
-  height: 100vh;
+.cd-section h2 {
+  line-height: 100vh;
   text-align: center;
   font-size: 2.4rem;
-  display: grid; 
-  grid-template-columns: auto auto;
-  grid-column-gap: 100px;
-  justify-content: center; 
-  align-items: center;
-
 }
 .cd-section:first-of-type > div {
   background-color: #2b334f;
@@ -79,10 +75,10 @@ Main Components
   background-color: #2e5367;
 }
 .cd-section:nth-of-type(3) > div {
-  background-color: #1b1630;
+  background-color: #11023a;
 }
 .cd-section:nth-of-type(4) > div {
-  background-color: #fcb052;
+  background-color: #22283f;
 }
 .cd-section:nth-of-type(5) > div {
   background-color: #f06a59;
@@ -108,8 +104,8 @@ Main Components
   background-image: url("../img/img-5.jpg");
 }
 @media only screen and (min-width: 1050px) {
-  .cd-section p {
-    font-size: 2rem;
+  .cd-section h2 {
+    font-size: 4rem;
     font-weight: 300;
   }
   [data-hijacking="on"] .cd-section {
@@ -181,16 +177,15 @@ Main Components
   /* lateral navigation */
   position: fixed;
   z-index: 1;
-  left: 90%;
+  right: 5%;
   top: 90%;
+  bottom: 0;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  display: flex;
-  align-items: baseline;
-  justify-content: baseline;
+  display: none;
 }
 .cd-vertical-nav a {
   display: block;
